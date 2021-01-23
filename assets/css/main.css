@@ -19,7 +19,11 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	
+
+
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -429,15 +433,17 @@ input, select, textarea {
 
 			#logo {
 				font-family: 'Oswald', sans-serif;
-				font-size: 30px;
+				font-size: 20px;
 				letter-spacing: 0.1em;
+				
 			}
 
 				#logo a {
 					display: block;
 					background-color: #27307c;
 					background-image: url("images/bg01.png");
-					padding: 0.875em 0.25em;
+					padding: 0.875em 0.30em;
+					padding-right: 30px;
 					border-radius: 0.2em;
 					text-align: center;
 					box-shadow: inset 0px 0px 0px 1px rgba(121, 26, 26, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
@@ -445,6 +451,7 @@ input, select, textarea {
 					color: #fff;
 					width: 300px;
 					z-index: 3;
+					height: 60px;
 				}
 
 		/* Content */
@@ -457,13 +464,8 @@ input, select, textarea {
 
 				#content > .inner {
 
-					/*
-								This sets an upper limit on your page content to prevent it
-								from looking insane on really wide displays. It's currently set
-								to the width of the sample post images, but you can change it to
-								whatever you like (or remove it entirely).
-							*/
-
+					
+							
 					max-width: 1038px;
 				}
 
@@ -760,6 +762,60 @@ input, select, textarea {
 				-ms-transform: translateX(-14em);
 				transform: translateX(-14em);
 			}
+
+			a{
+				font-family: 'Oswald', sans-serif;
+
+
+
+			}
+			.ribbon {
+				font-size: 16px !important;
+				/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+			   
+				width: 50%;
+				   
+				position: relative;
+				background: #ba89b6;
+				color: #fff;
+				text-align: center;
+				padding: 1em 2em; /* Adjust to suit */
+				margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+			   }
+			   .ribbon:before, .ribbon:after {
+				content: "";
+				position: absolute;
+				display: block;
+				bottom: -1em;
+				border: 1.5em solid #986794;
+				z-index: -1;
+			   }
+			   .ribbon:before {
+				left: -2em;
+				border-right-width: 1.5em;
+				border-left-color: transparent;
+			   }
+			   .ribbon:after {
+				right: -2em;
+				border-left-width: 1.5em;
+				border-right-color: transparent;
+			   }
+			   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+				content: "";
+				position: absolute;
+				display: block;
+				border-style: solid;
+				border-color: #804f7c transparent transparent transparent;
+				bottom: -1em;
+			   }
+			   .ribbon .ribbon-content:before {
+				left: 0;
+				border-width: 1em 0 0 1em;
+			   }
+			   .ribbon .ribbon-content:after {
+				right: 0;
+				border-width: 1em 1em 0 0;
+			   }
 
 			
 
