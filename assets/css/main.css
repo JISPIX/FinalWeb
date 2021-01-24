@@ -20,8 +20,16 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	border:#131212;
 	
 	
+
+
+}
+
+img{
+	border: 3px solid #424c5e;
+	border-radius: 10px;
 
 
 }
@@ -775,6 +783,13 @@ input, select, textarea {
 
 
 			}
+
+			.imagemape{
+				height: 300px;
+				filter: grayscale(100%);
+	
+	
+			}
 			.ribbon {
 				font-size: 16px !important;
 				/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
@@ -823,12 +838,14 @@ input, select, textarea {
 				border-width: 1em 1em 0 0;
 			   }
 
-			    .imagemape{
-				   height: 300px;
-				   filter: grayscale(100%);
+			}
 
+		}
 
-			   }
+		
+
+			   
+			   
 			   
 
 			   
