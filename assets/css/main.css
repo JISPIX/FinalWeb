@@ -27,6 +27,25 @@ section, summary, time, mark, audio, video {
 
 }
 
+.card {
+	width:300px;
+	display:inline-block;
+	margin:20px;
+	padding:10px;
+	background-color: #ffeaa7;
+	border-radius:10px;
+	
+	
+	
+	
+  }
+
+  .cards{
+	  width:300px;
+
+
+  }
+
 .codingpart{
 	font-size: 30px;
 	
@@ -69,9 +88,7 @@ ol, ul {
 		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
+	
 
 	body {
 		background-color: #e8e8e8;
@@ -458,7 +475,7 @@ ol, ul {
 					color: #fff;
 					width: 300px;
 					z-index: 3;
-					height: 60px;
+					
 				}
 
 		/* Content */
