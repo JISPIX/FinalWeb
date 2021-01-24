@@ -27,6 +27,16 @@ section, summary, time, mark, audio, video {
 
 }
 
+.codingpart{
+	font-size: 30px;
+	
+
+
+
+}
+
+
+
 img{
 	border: 3px solid #424c5e;
 	border-radius: 10px;
@@ -49,26 +59,9 @@ ol, ul {
 }
 
 
-body {
-	-webkit-text-size-adjust: none;
-}
 
-mark {
-	background-color: transparent;
-	color: inherit;
-}
 
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
 
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-}
 
 /* basic */
 
@@ -97,7 +90,10 @@ input, select, textarea {
 	}
 
 	a {
-		color: #c94663;
+		color: #000000;
+		text-decoration: none;
+
+	
 	}
 
 	strong, b {
@@ -253,9 +249,7 @@ input, select, textarea {
 			text-decoration: none;
 			border-radius: 0.4em;
 			outline: 0;
-			-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-ms-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			
 			transition: background-color .25s ease-in-out, color .25s ease-in-out;
 		}
 
