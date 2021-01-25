@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <script src = https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js>
     </script>
     <title>Family | My Website!</title>
     <meta charset="utf-8" />
@@ -16,41 +16,37 @@
 
 <body class="is-preload">
     <script>
-		n = new Date();
-		y = n.getFullYear();
-		m = n.getMonth() + 1;
-		d = n.getDate();
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
 
-		document.getElementById("Year").innerHTML = y;
-		document.getElementById("Month").innerHTML = m;
-		document.getElementById("Day").innerHTML = d;
-
-	</script>
+        document.getElementById("Year").innerHTML = y;
+        document.getElementById("Month").innerHTML = m;
+        document.getElementById("Day").innerHTML = d;
+    </script>
     <script>
         function Password() {
             var msg, reply;
             msg = prompt("Enter your password: ");
             if (msg == "mape") {
                 prompt("Acess Granted. Click OK to continue");
-                
-            }
-            else {
+
+            } else {
                 alert("That is Wrong! You will be redirected to Home!");
                 window.location.href = "index.html";
 
 
             }
 
-        
-
-            
 
 
-            
+
+
+
+
 
         }
-        
-        
     </script>
 
 
@@ -66,96 +62,80 @@
                 </header>
 
                 <div class="filters">
-                    <button value ="Loo"> Loo</button>
-                    <button value = "Law"> Law</button>
-                    <button value = "Wu"> Wu</button>
+                    <button value="Loo"> Loo</button>
+                    <button value="Law"> Law</button>
+                    <button value="Wu"> Wu</button>
+                    <button value="Ling"> Ling</button>
                 </div>
                 <div class="info">
-					<span class="month">  Jan     <span>
+                    <span class="month">  Jan     <span>
 					
 					
 
-					<span class="date">   <script type="text/javascript">document.write(d)</script>      </span> 
+					<span class="date">   <script type="text/javascript">document.write(d)</script>      </span>
 
-					<span class="year">     <script type="text/javascript">document.write(y)</script>     </span>
-					
-
+                    <span class="year">     <script type="text/javascript">document.write(y)</script>     </span>
 
 
-				</div>
-            
-               
+
+
+                </div>
+
+
 
 
 
                 <div class="list">
-      
-                    <div class = "card Loo">            
-                      <p>Loo</p>
-                      <img class = "cards" src="images/icon.png">
-                     
+
+                    <div class="card Loo">
+                        <p>Justin</p>
+                        <img class="cards" src="images/family/IMG_7902.JPG">
+
 
                     </div>
-                    
-                    <div class = "card Law">            
-                      <p>Law</p>
-                      <img class = "cards" src="images/download.jpg">
-                     
+
+                    <div class="card Loo">
+                        <p>Emily</p>
+                        <img class="cards" src="images/family/IMG_7519.JPG">
+
+                    </div>
+
+                    <div class="card Wu">
+                        <p>Brigit</p>
+                        <img class="cards" src="images/family/IMG_7893.JPG">
+
                     </div>
 
                 </div>
-                    
-                    
-                  
+
+
+
 
 
             </article>
 
             <script>
-                function filterCards(event){
-                  var clicked = event.currentTarget;
-                  var label = $(clicked).text();
-                  $("heading").text(label);
-                  $('.card').hide();
-                  var selected = $(clicked).val();
-                  $('.'+selected).show();
-                  $('#heading').text(label);
-          
-          
-          
+                function filterCards(event) {
+                    var clicked = event.currentTarget;
+                    var label = $(clicked).text();
+                    $("heading").text(label);
+                    $('.card').hide();
+                    var selected = $(clicked).val();
+                    $('.' + selected).show();
+                    $('#heading').text(label);
+
+
+
                 }
                 $('button').click(filterCards);
-          
-           
             </script>
-          
-          
-            <img src="images/download.jpg" /></a>
 
 
-            <article class="box post post-excerpt">
-                <header>
-                    <h2><a href="#">What time is it?</a></h2>
-                    <p>Feugiat interdum sed commodo ipsum consequat dolor nullam metus</p>
-                </header>
 
 
-                <p>
-
-                </p>
-            </article>
-
-            <article class="box post post-excerpt">
-                <header>
-                    <h2><a href="#">some mroe Lorem ipsum dolor sit amet</a></h2>
-                    <p>lorem ipsum</p>
-                </header>
 
 
-                <p>
 
-                </p>
-            </article>
 
 
 
@@ -194,6 +174,68 @@
             </header>
 
         </section>
+
+    </div>
+
+    <article class="box post post-excerpt">
+        <header>
+
+            <p> ‎‎ </p>
+        </header>
+
+
+        <p>
+
+        </p>
+    </article>
+
+    <article class="box post post-excerpt">
+        <header>
+
+            <p> ‎‎ </p>
+        </header>
+
+
+        <p>
+
+        </p>
+    </article>
+
+    <article class="box post post-excerpt">
+        <header>
+
+            <p> ‎‎ </p>
+        </header>
+
+
+        <p>
+
+        </p>
+    </article>
+
+    <article class="box post post-excerpt">
+        <header>
+
+            <p> ‎‎ </p>
+        </header>
+
+
+        <p>
+
+        </p>
+    </article>
+
+    <article class="box post post-excerpt">
+        <header>
+
+            <p> ‎‎mape </p>
+        </header>
+
+
+        <p>
+
+        </p>
+    </article>
 
 
 
