@@ -27,6 +27,16 @@ section, summary, time, mark, audio, video {
 
 }
 
+.passwordTest{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 30px;
+	
+	
+
+
+}
+
 .card {
 	width:300px;
 	display:inline-block;

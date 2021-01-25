@@ -1,44 +1,173 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
+<html>
 
 <head>
-    <title>Password</title>
-    <style>
-        body {
-            background-color: lightblue;
-            padding: 30px;
-        }
-    </style>
+    <title>Verification | My Website!</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="images/icon2.png" />
+</head>
 
+<body class="is-preload">
     <script>
         function checkPassword() {
             var password = document.getElementById("passwordBox");
             var passwordText = password.value;
-            if (passwordText == "yourpasswordhere") {
+            if (passwordText == "mape") {
                 return true;
             } else {
                 alert("Access denied! Incorrent password!");
                 return false;
             }
         }
-
-
-
-
-
-
     </script>
 
 
+    <div id="content">
+        <div class="inner">
 
-</head>
 
-<body>
-    <p style="font-size: 30pt;">THE CODE GUY</p>
-    <p>Please enter the password to view this website.</p>
-    <p>Password<input id="passwordBox" type="password" /></p>
-    <a href="family.html" onclick="return checkPassword();">
-        Click here to submit password and view website
-    </a>
+            <article class="box post post-excerpt">
+                <header>
+
+                    <h2><a href="#">Verification</a></h2>
+                    <p>Welcome!</p>
+                </header>
+                <div class="info">
+
+                    <span class="date"><span class="month">Jan<span>y</span></span> <span class="day">21</span><span
+                            class="year">, 2021</span></span>
+
+
+
+                </div>
+
+                <p style="font-size: 30pt;"></p>
+                <p>Hello! You must be a family member to view this part of the page! Please enter the password.</p>
+                <p>Password: <input id="passwordBox" type="password" /></p>
+                <a class = "passwordTest" href="family.html" onclick="return checkPassword();">
+                    SUBMIT
+                </a>
+
+            </article>
+
+
+            
+
+            <article class="box post post-excerpt">
+                <header>
+                    <h3><a href="#"></a></h3>
+                    <p> </p>
+                </header>
+
+
+                <p>
+
+                </p>
+            </article>
+
+            <article class="box post post-excerpt">
+                <header>
+
+                    <p> ‎‎‎‎‎‎‎‎‎‎ </p>
+                </header>
+
+
+                <p>
+
+                </p>
+            </article>
+
+            <article class="box post post-excerpt">
+                <header>
+
+                    <p> ‎‎ </p>
+                </header>
+
+
+                <p>
+
+                </p>
+            </article>
+
+            <article class="box post post-excerpt">
+                <header>
+                    <h3><a href="#"></a></h3>
+                    <p> </p>
+                </header>
+
+
+                <p>
+
+                </p>
+            </article>
+
+            <article class="box post post-excerpt">
+                <header>
+                    <h3><a href="#"></a></h3>
+                    <p> </p>
+                </header>
+
+
+                <p>
+
+                </p>
+            </article>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div id="sidebar">
+
+
+        <h1 id="logo"><a href="#">JUSTIN LOO</a></h1>
+
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="aboutme.html">About Me</a></li>
+                <li class="current"><a href="test.html">Family</a></li>
+            </ul>
+
+
+        </nav>
+
+
+
+
+
+
+
+
+
+        <section class="box recent-comments">
+            <header>
+                <h2>Recent Comments</h2>
+            </header>
+
+        </section>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
