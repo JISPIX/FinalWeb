@@ -16,6 +16,17 @@
 
 <body class="is-preload">
     <script>
+		n = new Date();
+		y = n.getFullYear();
+		m = n.getMonth() + 1;
+		d = n.getDate();
+
+		document.getElementById("Year").innerHTML = y;
+		document.getElementById("Month").innerHTML = m;
+		document.getElementById("Day").innerHTML = d;
+
+	</script>
+    <script>
         function Password() {
             var msg, reply;
             msg = prompt("Enter your password: ");
@@ -59,6 +70,19 @@
                     <button value = "Law"> Law</button>
                     <button value = "Wu"> Wu</button>
                 </div>
+                <div class="info">
+					<span class="month">  Jan     <span>
+					
+					
+
+					<span class="date">   <script type="text/javascript">document.write(d)</script>      </span> 
+
+					<span class="year">     <script type="text/javascript">document.write(y)</script>     </span>
+					
+
+
+
+				</div>
             
                
 
