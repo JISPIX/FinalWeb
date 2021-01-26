@@ -99,6 +99,8 @@ video {
 
 }
 
+
+
 hr{
     width:1250px;
     
@@ -142,9 +144,12 @@ button{
 }
 
 .passwordTest {
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 30px;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .card {
