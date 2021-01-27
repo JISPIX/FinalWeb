@@ -371,6 +371,8 @@ button{
     padding-left: 32px;
 }
 
+
+
 .year {
     padding-left: 20px;
     font-weight: bold;
@@ -379,6 +381,8 @@ button{
 
 .date {
     font-size: 25px;
+    font-weight: bold;
+    color:#565656;
 }
 
 .passwordTest {
@@ -864,10 +868,10 @@ article:last-child {
     .box.post .info .date {
         position: relative;
         font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: 400;
+        
         text-align: center;
         display: block;
-        color: #999;
+        
         border-bottom: solid 1px #ddd;
         padding: 0 0 1em 0;
         margin: 0 0 0.75em 0;
