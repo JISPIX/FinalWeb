@@ -1039,7 +1039,26 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         }
     }
 
-    @media only screen and (max-width: 767px) {
-        
-     }
+
+
+    
 }
+
+.hidebutton{
+    display: none;
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .hidebutton{
+        display: block;
+
+
+
+    }
+
+}
+        
