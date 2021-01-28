@@ -10,6 +10,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: #131212;
 }
 
+img{
+    height: 36.375em;
+    width: 67.875em;
+
+}
+
 @media screen and (max-width: 1000px) {
     /* Basic */
     html, body {
