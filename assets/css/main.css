@@ -11,10 +11,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 img{
-    height: 36.375em;
-    width: 67.875em;
+    height: 100%;
+    width: 100%;
 
 }
+
+.is-preload{
+    height:100%;
+
+}
+
+
 
 @media screen and (max-width: 1000px) {
     /* Basic */
@@ -209,7 +216,7 @@ img{
 }
 
 p {
-    font-size: 20px;
+    font-size: 100%;
 }
 
 .container {
@@ -719,9 +726,15 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 /* Wide */
 
 @media screen and (min-width: 1201px) {
+
+    .openbtn{
+        display: none;
+
+
+    }
     /* Basic */
     body {
-        min-width: 1200px;
+        
         font-size: 12pt;
     }
     input, textarea, select {
@@ -779,6 +792,14 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 /* narrow */
 
 @media screen and (min-width: 737px) and (max-width: 1200px) {
+
+    .openbtn{
+        display: none;
+
+
+    }
+
+
     /* Basic */
     body {
         min-width: 1000px;
@@ -790,6 +811,8 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     /* Content */
     #content {
         padding: 2em 3em 6em 3em;
+        margin-top: 30px;
+        padding-top: 30px;
     }
     #contentcontact {
         padding: 2em 3em 6em 3em;
@@ -887,7 +910,10 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     }
     .hidebutton {
         display: block;
-      }
+
+    }
+
+    
 }
 
 /* Off-Canvas Sidebar */
@@ -1027,6 +1053,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         color: white;
         padding: 10px 15px;
         border: none;
+        display: block;
     }
     .openbtn:hover {
         background-color: #444;
@@ -1050,7 +1077,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     
 }
 
-.hidebutton{
+#hidebutton{
     display: none;
 
 
@@ -1059,12 +1086,100 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 
 @media only screen and (max-width: 767px) {
 
-    .hidebutton{
+    #sidebar {
+        padding: 30px 20px 30px 10px;
+        box-shadow: 5px 10px 18px #131212;
+    }
+
+    #hidebutton{
         display: block;
 
 
 
     }
+
+    .month{
+        display: none;
+
+
+    }
+
+    .date{
+        display: none;
+
+
+    }
+
+    .year{
+        display: none;
+
+
+    }
+
+    h2{
+        font-size: 30px;
+
+
+    }
+
+  
+
+    
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    
+
+    .month{
+        display: none;
+
+
+    }
+
+    .date{
+        display: none;
+
+
+    }
+
+    .year{
+        display: none;
+
+
+    }
+
+    .home{
+        font-size: 40px;
+        padding-top: 40px;
+
+
+
+    }
+
+    #content{
+        height:1000px;
+
+
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    
+
+    .openbtn{
+        display: none;
+
+
+
+    }
+
+   
 
 }
         
