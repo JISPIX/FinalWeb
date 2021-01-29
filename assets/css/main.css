@@ -21,6 +21,12 @@ img{
 
 }
 
+.closebtn{
+    visibility: hidden;
+
+
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -796,7 +802,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 @media screen and (min-width: 737px) and (max-width: 1200px) {
 
     .openbtn{
-        visibility: hidden;
+        visibility:visible;
 
     }
 
@@ -856,6 +862,12 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 
 @media screen and (max-width: 736px) {
     /* Basic */
+
+    .closebtn{
+        visibility: hidden;
+
+
+    }
     body, input, textarea, select {
         line-height: 1.75em;
         font-size: 11pt;
@@ -1080,6 +1092,8 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
             color: white;
             padding: 10px 15px;
             border: none;
+            display: block;
+            visibility: visible;
            
         }
     }
