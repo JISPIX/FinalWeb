@@ -833,7 +833,19 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     }
     /* Logo */
     #logo {
-        display: none;
+        display: block;
+        background-color: #27307c;
+        background-image: url("images/bg01.png");
+        
+        margin-bottom: 30px;;
+        text-align: center;
+        box-shadow: 5px 10px 18px #131212;
+        text-decoration: none;
+        color: #fff;
+        width: 7.6875em;
+        z-index: 3;
+        border-top-left-radius: 0.2em;
+        border-bottom-left-radius: 0.2em;
     }
     /* Nav */
     #nav {
@@ -886,7 +898,20 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     /* Box */
     /* Logo */
     #logo {
-        display: none;
+        
+        display: block;
+        background-color: #27307c;
+        background-image: url("images/bg01.png");
+        
+        margin-bottom: 30px;;
+        text-align: center;
+        box-shadow: 5px 10px 18px #131212;
+        text-decoration: none;
+        color: #fff;
+        width: 123px;
+        z-index: 3;
+        border-top-left-radius: 0.2em;
+        border-bottom-left-radius: 0.2em;
     }
     /* Nav */
     #nav {
@@ -1112,7 +1137,8 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         box-shadow: 5px 10px 18px #131212;
         text-decoration: none;
         color: #fff;
-        width: 123px;
+        width: 200px;
+        height: 50px;
         z-index: 3;
         border-top-left-radius: 0.2em;
         border-bottom-left-radius: 0.2em;
