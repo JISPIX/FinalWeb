@@ -54,14 +54,9 @@ img{
         display: block;
     }
     #sidebar {
-        -moz-backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
+       
         backface-visibility: hidden;
-        -moz-transition: -moz-transform 0.5s ease;
-        -webkit-transition: -webkit-transform 0.5s ease;
-        -ms-transition: -ms-transform 0.5s ease;
-        transition: transform 0.5s ease;
+        
         display: block;
         height: 100% !important;
         min-height: 0 !important;
@@ -69,10 +64,7 @@ img{
         position: fixed;
         top: 0;
         z-index: 10002;
-        -moz-transform: translateX(-14em);
-        -webkit-transform: translateX(-14em);
-        -ms-transform: translateX(-14em);
-        transform: translateX(-14em);
+       
     }
     body.sidebar-visible #content, body.sidebar-visible #titleBar {
         -moz-transform: translateX(14em);
@@ -956,24 +948,15 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         display: block;
     }
     #sidebar {
-        -moz-backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -moz-transition: -moz-transform 0.5s ease;
-        -webkit-transition: -webkit-transform 0.5s ease;
-        -ms-transition: -ms-transform 0.5s ease;
-        transition: transform 0.5s ease;
+        
+     
         display: block;
         height: 100% !important;
         min-height: 0 !important;
         overflow-y: auto;
         position: fixed;
         top: 0;
-        -moz-transform: translateX(-14em);
-        -webkit-transform: translateX(-14em);
-        -ms-transform: translateX(-14em);
-        transform: translateX(-14em);
+        
     }
     a {
         font-family: 'Oswald', sans-serif;
@@ -1112,9 +1095,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         display: block;
         background-color: #27307c;
         background-image: url("images/bg01.png");
-        padding: 0.875em 0.30em;
-        padding-right: 130px;
-        padding-left: 10px;
+        
         margin-bottom: 30px;;
         text-align: center;
         box-shadow: 5px 10px 18px #131212;
