@@ -21,89 +21,58 @@
 </head>
 
 <body class="is-preload">
+	
 	<script>
-		if ((window.fullScreen) || (window.innerWidth == screen.width && window.innerHeight == screen.height)) {
-			alert("i am real");
-		}
-		if (window.innerHeight == screen.height) {
-			alert("i am real terpe");
 
-		}
+		var x = 0;
 		
+		document.getElementById('Noite')
+		var screenMax = false;
+
+
+
+
+
 		var n = new Date();
 		var y = n.getFullYear();
 		var m = n.getMonth() + 1;
 		var d = n.getDate();
+		
 
 
 
-
-		var Maxscreen = true;
+		var screenMax = true;
 
 		function openNav() {
 			document.getElementById("sidebar").style.visibility = "visible";
-			var MaxScreen = true;
+			screenMax = true;
 
 
 		}
 
 		function closeNav() {
+			
 			document.getElementById("sidebar").style.visibility = "hidden";
-			var Maxscreen = false;
+			console.log("reg2");
+			screenMax = false;
+			
 		}
 
+		
 
-		function myFunction(x) {
-			if (x.matches) { // If media query matches
-				document.getElementById("sidebar").style.visibility = "visible";
-			} else {
+		console.log(closeNav)
 
-			}
-		}
+	
+		
 
-		var x = window.matchMedia("(min-width: 1600px)")
-		myFunction(x) // Call listener function at run times
-		x.addListener(myFunction) // Attach listener function on state changes
+		
 
-		var i = 100;
-
-		while(true){
-			if (Maxscreen = false) {
-
-				alert("i am mape");
-			}
-
-			break;
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
 
 		
 
 
-
-
-
-
+		
 
 
 
@@ -131,6 +100,7 @@
 			<article class="box post post-excerpt">
 				<header>
 					<div id="main">
+						
 						<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 						<button class="openbtnclose" onclick="closeNav()">☰ Close Sidebar</button>
 
@@ -223,7 +193,7 @@
 
 		<nav id="nav">
 			<ul>
-				
+
 
 				<li class="current"><a href="index.html">Home</a></li>
 				<li><a href="projects.html">Latest Posts</a></li>
