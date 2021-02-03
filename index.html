@@ -30,7 +30,7 @@
 
 
 <body class="is-preload">
-	<button class="openbtntop" onclick="openNav()">☰</button>
+	
 
 
 
@@ -91,21 +91,9 @@
 
 		}
 
-		function myFunction() {
-			var x = document.getElementById("#sidebar");
-			if (window.getComputedStyle(x).visibility === "hidden") {
-				document.getElementById("#openbtn").style.display = "block";
-				document.getElementById("#openbtn").style.visibility = "visible";
+		
 
-			} else {
-				document.getElementById("#openbtn").style.display = "none";
-				document.getElementById("#openbtn").style.visibility = "hidden";
-
-
-			}
-		}
-
-		myFunction();
+		
 
 
 
@@ -141,6 +129,25 @@
 	</script>
 
 	<script>
+		function myFunction() {
+			var x = document.getElementById("#sidebar");
+			if (window.getComputedStyle(x).visibility == "hidden") {
+				document.getElementById("#sidebar").style.display = "block";
+				document.getElementById("#sidebar").style.visibility = "visible";
+
+			} else {
+				document.getElementById("#sidebar").style.display = "none";
+				document.getElementById("#sidebar").style.visibility = "hidden";
+
+
+			}
+		}
+
+		while(true){
+			myFunction();
+
+
+		}
 
 		
 
@@ -172,6 +179,8 @@
 			<article class="box post post-excerpt">
 				<header>
 					<div id="main">
+						<button class="openbtntop" onclick="openNav()">☰</button>
+						
 						<button class="openbtn" id="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 						<button class="openbtnclose" onclick="closeNav()">☰ Close Sidebar</button>
 
