@@ -21,11 +21,11 @@
 </head>
 
 <body class="is-preload">
-	
+
 	<script>
 
 		var x = 0;
-		
+
 		document.getElementById('Noite')
 		var screenMax = false;
 
@@ -37,7 +37,7 @@
 		var y = n.getFullYear();
 		var m = n.getMonth() + 1;
 		var d = n.getDate();
-		
+
 
 
 
@@ -51,28 +51,30 @@
 		}
 
 		function closeNav() {
-			
+
 			document.getElementById("sidebar").style.visibility = "hidden";
 			console.log("reg2");
 			screenMax = false;
-			
+
 		}
 
-		
+
 
 		console.log(closeNav)
 
-	
-		
-
-		
-
-		
-
-		
 
 
-		
+
+		if (!window.screenTop && !window.screenY) {
+			alert('Browser is in fullscreen');
+		}
+
+
+
+
+
+
+
 
 
 
@@ -100,7 +102,7 @@
 			<article class="box post post-excerpt">
 				<header>
 					<div id="main">
-						
+
 						<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 						<button class="openbtnclose" onclick="closeNav()">☰ Close Sidebar</button>
 
