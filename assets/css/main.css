@@ -15,6 +15,15 @@ img {
     width: 100%;
 }
 
+.openbtntop{
+    height: 40px;
+    
+    
+    
+
+
+}
+
 .openbtntwo {
     font-size: 20px;
     cursor: pointer;
@@ -32,7 +41,10 @@ img {
 
 .openbtn {
     display: none;
+    
 }
+
+
 
 .openbtnclose {
     display: none;
@@ -71,6 +83,17 @@ img {
         position: fixed;
         top: 0;
         z-index: 10002;
+    }
+
+    #sidebartwo {
+        backface-visibility: hidden;
+        display: block;
+        height: 100% !important;
+        min-height: 0 !important;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        z-index: 0;
     }
     body.sidebar-visible #content, body.sidebar-visible #titleBar {
         -moz-transform: translateX(14em);
@@ -587,6 +610,31 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     -webkit-flex-shrink: 0;
     -ms-flex-shrink: 0;
     flex-shrink: 0;
+    z-index: 1;
+}
+
+#sidebartwo {
+    color: rgba(255, 255, 255, 0.55);
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+    width: 12em;
+    padding: 3em 1.35em 1em 1.15em;
+    background: #424c5e;
+    overflow-y: auto;
+    left: 0;
+    box-shadow: inset -0.1em 0em 0.35em 0em rgba(0, 0, 0, 0.15);
+    -moz-order: -1;
+    -webkit-order: -1;
+    -ms-order: -1;
+    order: -1;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    z-index: 0;
 }
 
 #sidebar form input, #sidebar form select, #sidebar form textarea {
@@ -731,6 +779,8 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 /* Wide */
 
 @media screen and (min-width: 1201px) {
+
+    
     /* Basic */
     body {
         font-size: 12pt;
@@ -783,7 +833,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     /* cotnent */
     #content {
         padding: 3em 5em 8em 5em;
-        margin-left: 7em;
+        margin-left: 4em;
     }
 }
 
@@ -1018,10 +1068,25 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         display: block;
         transition: 0.3s;
     }
-    .sidebar a:hover {
+    .sidebartwo a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebartwo a:hover {
         color: #f1f1f1;
     }
-    .sidebar .closebtn {
+    .sidebartwo .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .sidebartwo .closebtn {
         position: absolute;
         top: 0;
         right: 25px;
@@ -1060,6 +1125,10 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         .sidebar a {
             font-size: 18px;
         }
+
+        .sidebartwo a {
+            font-size: 18px;
+        }
         .openbtn {
             font-size: 20px;
             cursor: pointer;
@@ -1070,12 +1139,26 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
             display: block;
             visibility: visible;
         }
+        .openbtntop{
+            display:none;
+    
+    
+        }
     }
 }
 
 @media only screen and (max-width: 767px) {
-    #logo {}
+    #logo {
+        margin-bottom: 30px;
+
+
+    }
     #sidebar {
+        padding: 30px 20px 30px 10px;
+        box-shadow: 5px 10px 18px #131212;
+    }
+
+    #sidebartwo {
         padding: 30px 20px 30px 10px;
         box-shadow: 5px 10px 18px #131212;
     }
@@ -1113,6 +1196,11 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     #content {
         height: 1000px;
     }
+    .openbtntop{
+        display:none;
+
+
+    }
 }
 
 @media only screen and (max-width: 999px) {
@@ -1128,4 +1216,11 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         width: 100%;
         height: 100%;
     }
+
+    .openbtntop{
+        display:none;
+
+
+    }
 }
+

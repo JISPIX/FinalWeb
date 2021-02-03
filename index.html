@@ -19,10 +19,41 @@
 
 	<link rel="shortcut icon" href="images/icon2.png" />
 </head>
+<style>
+	#sidebar {
+		display: block;
+		visibility: visible;
+
+
+	}
+</style>
+
 
 <body class="is-preload">
+	<button class="openbtntop" onclick="openNav()">☰</button>
+
+
 
 	<script>
+
+		function isFullScreen() {
+			alert("terpe");
+		}
+
+		function notFullScreen() {
+			// do stuff for non-full screen
+		}
+		document.addEventListener("fullscreenchange", function () {
+			(document.fullscreen) ? isFullScreen() : notFullScreen();
+		}, false);
+
+		document.addEventListener("mozfullscreenchange", function () {
+			(document.mozFullScreen) ? isFullScreen() : notFullScreen();
+		}, false);
+
+		document.addEventListener("webkitfullscreenchange", function () {
+			(document.webkitIsFullScreen) ? isFullScreen() : notFullScreen();
+		}, false);
 
 		var x = 0;
 
@@ -50,6 +81,8 @@
 
 		}
 
+
+
 		function closeNav() {
 
 			document.getElementById("sidebar").style.visibility = "hidden";
@@ -58,16 +91,42 @@
 
 		}
 
+		function myFunction() {
+			var x = document.getElementById("#sidebar");
+			if (window.getComputedStyle(x).visibility === "hidden") {
+				document.getElementById("#openbtn").style.display = "block";
+				document.getElementById("#openbtn").style.visibility = "visible";
+
+			} else {
+				document.getElementById("#openbtn").style.display = "none";
+				document.getElementById("#openbtn").style.visibility = "hidden";
 
 
-		console.log(closeNav)
-
-
-
-
-		if (!window.screenTop && !window.screenY) {
-			alert('Browser is in fullscreen');
+			}
 		}
+
+		myFunction();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -81,6 +140,13 @@
 
 	</script>
 
+	<script>
+
+		
+
+	</script>
+
+
 
 
 
@@ -92,6 +158,10 @@
 
 
 	<div id="content">
+
+
+
+
 		<div class="inner">
 
 
@@ -102,9 +172,13 @@
 			<article class="box post post-excerpt">
 				<header>
 					<div id="main">
-
-						<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+						<button class="openbtn" id="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 						<button class="openbtnclose" onclick="closeNav()">☰ Close Sidebar</button>
+
+
+
+
+
 
 
 					</div>
@@ -113,7 +187,9 @@
 					<p>Welcome to my Website!</p>
 				</header>
 				<div class="info">
+
 					<span class="month"> Jan <span>
+
 
 
 
@@ -219,6 +295,8 @@
 
 
 	</div>
+
+
 
 
 
