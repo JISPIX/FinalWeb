@@ -15,17 +15,15 @@ img {
     width: 100%;
 }
 
-.openbtntop{
-    height: 35px;
-    margin-left: 28px;
-   
-    
-    z-index: 3003;
-    
-    
+#openbtntop{
+    background-color: #b4b0b0;
+    border:none;
+    box-shadow: 5px 10px 18px #888888;
 
 
 }
+
+
 
 .openbtntwo {
     font-size: 20px;
@@ -109,6 +107,16 @@ img {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         transform: translateX(0);
+    }
+    .openbtntwo {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: block;
+        visibility: visible;
     }
 }
 
@@ -966,6 +974,16 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 /* Off-Canvas Sidebar */
 
 @media screen and (max-width: 1000px) {
+    .openbtntwo {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: block;
+        visibility: visible;
+    }
     /* Basic */
     html, body {
         overflow-x: hidden;
@@ -1142,7 +1160,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
             display: block;
             visibility: visible;
         }
-        .openbtntop{
+        #openbtntop{
             display:none;
     
     
@@ -1199,7 +1217,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     #content {
         height: 1000px;
     }
-    .openbtntop{
+    #openbtntop{
         display:none;
 
 
@@ -1220,10 +1238,28 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         height: 100%;
     }
 
-    .openbtntop{
-        display:none;
+    #openbtntop{
+        display:block;
+        visibility: visible;
 
 
     }
+}
+
+@media only screen and (min-width: 999px) {
+   
+
+    #openbtntop{
+        display:block;
+        visibility: visible;
+
+
+    }
+}
+
+#sidebar{
+    visibility: visible;
+
+
 }
 

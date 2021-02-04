@@ -34,6 +34,7 @@
 
 
 
+
 	<script>
 
 		function isFullScreen() {
@@ -69,11 +70,6 @@
 		var m = n.getMonth() + 1;
 		var d = n.getDate();
 
-
-
-
-		var screenMax = true;
-
 		function openNav() {
 			document.getElementById("sidebar").style.visibility = "visible";
 			screenMax = true;
@@ -91,9 +87,14 @@
 
 		}
 
-		
 
-		
+
+
+
+
+
+
+
 
 
 
@@ -129,27 +130,49 @@
 	</script>
 
 	<script>
-		function myFunction() {
-			var x = document.getElementById("#sidebar");
-			if (window.getComputedStyle(x).visibility == "hidden") {
-				document.getElementById("#sidebar").style.display = "block";
-				document.getElementById("#sidebar").style.visibility = "visible";
-
-			} else {
-				document.getElementById("#sidebar").style.display = "none";
-				document.getElementById("#sidebar").style.visibility = "hidden";
-
-
-			}
-		}
-
-		while(true){
-			myFunction();
-
-
-		}
+		var screenMax = true;
 
 		
+		function openNav() {
+			document.getElementById("sidebar").style.visibility = "visible";
+			screenMax = true;
+
+
+		}
+
+
+
+		function closeNav() {
+
+			document.getElementById("sidebar").style.visibility = "hidden";
+			console.log("reg2");
+			screenMax = false;
+
+		}
+		var width = screen.width;
+		var height = screen.height;
+		console.log(width);
+		console.log(height);
+
+		var element = document.getElementById('openbtntop');
+		if (element != null && element.value == 'visible') {
+			
+			alert("mape");
+
+
+		}
+
+				
+
+		
+
+		
+		
+
+
+		
+
+
 
 	</script>
 
@@ -179,8 +202,9 @@
 			<article class="box post post-excerpt">
 				<header>
 					<div id="main">
-						<button class="openbtntop" onclick="openNav()">☰</button>
+						<button id="openbtntop" onclick="openNav()">☰ Open Sidebar</button>
 						
+
 						<button class="openbtn" id="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 						<button class="openbtnclose" onclick="closeNav()">☰ Close Sidebar</button>
 
