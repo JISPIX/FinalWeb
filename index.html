@@ -160,10 +160,24 @@
 		console.log(height);
 
 		var element = document.getElementById('openbtntop');
-		var button = $('#openbtntop');
+		var button = $('openbtntop');
+		console.log(button);
 		if (button.is(":visible")) {
-			button.animate({ width: "toggle" });   // Hide button
+
+			alert("mape");
+		} else {
+			alert("terpe");
+
+
 		}
+
+		$("openbtntop").each(function () {
+			if ($('openbtntop').css("visibility") == "hidden") {
+				// handle non visible state
+			} else {
+				// handle visible state
+			}
+		});
 
 
 
