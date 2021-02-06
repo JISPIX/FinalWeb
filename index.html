@@ -160,39 +160,50 @@
 		console.log(height);
 
 		var element = document.getElementById('openbtntop');
-		var button = $('openbtntop');
-		console.log(button);
-		if (button.is(":visible")) {
+		
 
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	<script type = "text/javascript">
+
+	
+
+	
+	$(document).ready(function(){
+		if($("#sidebar").css('visibility') == 'visible'){
+
+			$("#openbtntop").css('visibility') == 'hidden';
+			$("#openbtntop").css('display') == 'none';
 			alert("mape");
-		} else {
-			alert("terpe");
+
+
+		} else{
+			alert("im repe");
+			
 
 
 		}
 
-		$("openbtntop").each(function () {
-			if ($('openbtntop').css("visibility") == "hidden") {
-				// handle non visible state
-			} else {
-				// handle visible state
-			}
-		});
+
+	});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+		
 	</script>
 
 
@@ -270,6 +281,8 @@
 				</p>
 
 			</article>
+
+			<p class = "mape" style ="visibility: visible;">terpe</p>
 			<img src="images/download.jpg" /></a>
 
 			<article class="box post post-excerpt">
@@ -315,7 +328,7 @@
 	</div>
 
 
-	<div id="sidebar">
+	<div class="sidebar" id = "sidebar">
 
 
 		<h1 id="logo"><a> JUSTIN LOO</a></h1>
