@@ -180,26 +180,47 @@
 	</script>
 	<script type="text/javascript">
 
+while(true){
+	
+
+	$(document).ready(function () {
+		
+		
+		if ($("#sidebar").css('visibility') == 'visible') {
+			alert("mape");
+
+
+				
+			document.getElementById("openbtntop").style.display = "none";
+			document.getElementById("openbtntop").style.visibility = "hidden";
+			
+
+
+		} else {
+			alert("im repe");
+			document.getElementById("openbtntop").style.display = "block";
+			document.getElementById("openbtntop").style.visibility = "visible";
 
 
 
-		$(document).ready(function () {
-			if ($("#sidebar").css('visibility') == 'visible') {
-
-				$("#openbtntop").css('visibility') == 'hidden';
-				$("#openbtntop").css('display') == 'none';
-				alert("mape");
+		}
 
 
-			} else {
-				alert("im repe");
+	});
 
 
 
-			}
+	}
+		
 
 
-		});
+
+	
+
+
+
+
+		
 
 
 
