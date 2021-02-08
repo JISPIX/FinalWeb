@@ -15,12 +15,21 @@ img {
     width: 100%;
 }
 
+.socialicon{
+
+    height:4%;
+    width: 4%;
+    border: none;
+}
+
 #openbtntop{
-    background-color: #ad99da;
+    background-color: #b4b6d8;
+    border-radius: 4px;
     border:none;
     box-shadow: 5px 10px 18px #c29ebf;
     display: block;
     visibility: visible;
+
 
 
 }
