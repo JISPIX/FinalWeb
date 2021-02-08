@@ -24,6 +24,195 @@
 		document.getElementById("Day").innerHTML = d;
 
 	</script>
+	<script>
+
+		function isFullScreen() {
+			alert("terpe");
+		}
+
+		function notFullScreen() {
+			// do stuff for non-full screen
+		}
+		document.addEventListener("fullscreenchange", function () {
+			(document.fullscreen) ? isFullScreen() : notFullScreen();
+		}, false);
+
+		document.addEventListener("mozfullscreenchange", function () {
+			(document.mozFullScreen) ? isFullScreen() : notFullScreen();
+		}, false);
+
+		document.addEventListener("webkitfullscreenchange", function () {
+			(document.webkitIsFullScreen) ? isFullScreen() : notFullScreen();
+		}, false);
+
+		var x = 0;
+
+		document.getElementById('Noite')
+		var screenMax = false;
+
+
+
+
+
+		var n = new Date();
+		var y = n.getFullYear();
+		var m = n.getMonth() + 1;
+		var d = n.getDate();
+
+		function openNav() {
+			document.getElementById("sidebar").style.visibility = "visible";
+			screenMax = true;
+
+
+		}
+
+
+
+		function closeNav() {
+
+			document.getElementById("sidebar").style.visibility = "hidden";
+			console.log("reg2");
+			screenMax = false;
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+	<script>
+		var screenMax = true;
+
+
+
+
+		function openNav() {
+			document.getElementById("sidebar").style.visibility = "visible";
+			screenMax = true;
+
+
+		}
+
+
+
+		function closeNav() {
+
+			document.getElementById("sidebar").style.visibility = "hidden";
+			console.log("reg2");
+			screenMax = false;
+
+
+		}
+		var width = screen.width;
+		var height = screen.height;
+		console.log(width);
+		console.log(height);
+
+		var element = document.getElementById('openbtntop');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+	<script type="text/javascript">
+
+
+	
+
+	$(document).ready(function () {
+		
+		
+		if ($("#sidebar").css('visibility') == 'visible') {
+			alert("mape");
+
+
+				
+			document.getElementById("openbtntop").style.display = "none";
+			document.getElementById("openbtntop").style.visibility = "hidden";
+			
+
+
+		} else {
+			alert("im repe");
+			document.getElementById("openbtntop").style.display = "block";
+			document.getElementById("openbtntop").style.visibility = "visible";
+
+
+
+		}
+
+
+	});
+
+
+
+	
+		
+
+
+
+	
+
+
+
+
+		
+
+
+
+
+	</script>
 
 
 	<div id="content">

@@ -16,9 +16,9 @@ img {
 }
 
 #openbtntop{
-    background-color: #b4b0b0;
+    background-color: #ad99da;
     border:none;
-    box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #c29ebf;
     display: block;
     visibility: visible;
 
@@ -1241,8 +1241,8 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     }
 
     #openbtntop{
-        display:block;
-        visibility: visible;
+        display:none;
+        visibility: hidden;
 
 
     }
