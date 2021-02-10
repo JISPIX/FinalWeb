@@ -15,26 +15,20 @@ img {
     width: 100%;
 }
 
-.socialicon{
-
-    height:4%;
+.socialicon {
+    height: 4%;
     width: 4%;
     border: none;
 }
 
-#openbtntop{
+#openbtntop {
     background-color: #b4b6d8;
     border-radius: 4px;
-    border:none;
+    border: none;
     box-shadow: 5px 10px 18px #c29ebf;
     display: block;
     visibility: visible;
-
-
-
 }
-
-
 
 .openbtntwo {
     font-size: 20px;
@@ -53,10 +47,7 @@ img {
 
 .openbtn {
     display: none;
-    
 }
-
-
 
 .openbtnclose {
     display: none;
@@ -96,7 +87,6 @@ img {
         top: 0;
         z-index: 10002;
     }
-
     #sidebartwo {
         backface-visibility: hidden;
         display: block;
@@ -418,7 +408,7 @@ button {
 }
 
 img {
-    border: 3px solid #424c5e;
+   
     border-radius: 10px;
 }
 
@@ -801,8 +791,6 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 /* Wide */
 
 @media screen and (min-width: 1201px) {
-
-    
     /* Basic */
     body {
         font-size: 12pt;
@@ -1157,7 +1145,6 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         .sidebar a {
             font-size: 18px;
         }
-
         .sidebartwo a {
             font-size: 18px;
         }
@@ -1171,10 +1158,8 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
             display: block;
             visibility: visible;
         }
-        #openbtntop{
-            display:none;
-    
-    
+        #openbtntop {
+            display: none;
         }
     }
 }
@@ -1182,14 +1167,11 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 @media only screen and (max-width: 767px) {
     #logo {
         margin-bottom: 30px;
-
-
     }
     #sidebar {
         padding: 30px 20px 30px 10px;
         box-shadow: 5px 10px 18px #131212;
     }
-
     #sidebartwo {
         padding: 30px 20px 30px 10px;
         box-shadow: 5px 10px 18px #131212;
@@ -1228,10 +1210,8 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     #content {
         height: 1000px;
     }
-    #openbtntop{
-        display:none;
-
-
+    #openbtntop {
+        display: none;
     }
 }
 
@@ -1248,29 +1228,78 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         width: 100%;
         height: 100%;
     }
-
-    #openbtntop{
-        display:none;
+    #openbtntop {
+        display: none;
         visibility: hidden;
-
-
     }
 }
 
 @media only screen and (min-width: 999px) {
-   
-
-    #openbtntop{
-        display:block;
+    #openbtntop {
+        display: block;
         visibility: visible;
-
-
     }
 }
 
-#sidebar{
+#sidebar {
     visibility: visible;
+}
 
+.slideshow {
+    margin-left: 30px;
+    width: 100%;
+    height: 100%;
+   
+    margin: auto;
+    position: relative;
+}
+
+.slide {
+    width: 110%;
+    height: 100%;
+    
+    
+    top: 0;
+}
+
+.slide-image {
+    height: 100%;
+    border: 3px;
+    border: 5px solid black;
+}
+
+.slide-text {
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+}
+
+.icon {
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    height: 6%;
+    border: none;
+    margin-right: 3px;
+}
+
+#next-icon {
+    right: -18%;
+}
+
+.icon2 {
+    width: 50px;
+    top: 40%;
+    height: 6%;
 
 }
 
+#previous-icon {
+    transform: scaleX(-1);
+    left: -75px;
+    position: absolute;
+    top: 40%;
+}

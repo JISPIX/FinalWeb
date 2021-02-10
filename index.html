@@ -33,11 +33,53 @@
 
 <body class="is-preload">
 
+	
 
 
 
 
 	<script>
+
+		var slides = $('.slide');
+		var currentSlide = 1;
+		function changeSlide() {
+			$('.slide').css('opacity', '0');
+			$('#slide' + currentSlide).animate({
+				'opacity': '1'
+			}, 500);
+		}
+		changeSlide();
+
+
+
+		function next() {
+			if (currentSlide < slides.length) {
+				currentSlide = currentSlide + 1;
+			} else {
+				currentSlide = 1;
+			}
+			changeSlide();
+		}
+		$('#next-icon').click(next);
+
+		function previous() {
+			if (currentSlide > 1) {
+				currentSlide = currentSlide - 1;
+			} else {
+				currentSlide = slides.length;
+			}
+			changeSlide();
+		}
+		$('#previous-icon').click(previous);
+
+
+
+
+
+
+
+
+
 
 		function isFullScreen() {
 			alert("terpe");
@@ -180,7 +222,7 @@
 	</script>
 	<script type="text/javascript">
 
-		
+
 
 
 
@@ -229,23 +271,23 @@
 
 			<article class="box post post-excerpt">
 				<button id="openbtntop" onclick="openNav()">☰ Open Sidebar</button>
-	
-				
+
+
 				<header>
 					<div id="main">
-						
-	
+
+
 						<button class="openbtn" id="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 						<button class="openbtnclose" onclick="closeNav()">☰ Close Sidebar</button>
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 					</div>
-					
+
 
 					<h2 class="home"><a>HOME</a></h2>
 					<p>Welcome to my Website!</p>
@@ -283,8 +325,24 @@
 
 			</article>
 
+			<div class = "slideshow">
+				<div class = "slide" id = "slide1">
+				
+					<img src = "images/IMG-8682.jpg" class = "slide-image">
+				</div>
+
 			
-			<img src="images/download.jpg" /></a>
+	
+				<img src="images/arrow.png" class="icon2" id="previous-icon">
+				<img src="images/arrow.png" class="icon" id="next-icon">
+	
+
+			</div>
+
+
+			
+
+			
 
 			<article class="box post post-excerpt">
 				<header>
