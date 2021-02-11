@@ -408,7 +408,6 @@ button {
 }
 
 img {
-   
     border-radius: 10px;
 }
 
@@ -1246,26 +1245,22 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 }
 
 .slideshow {
-    margin-left: 30px;
-    width: 100%;
-    height: 100%;
-   
+    width: 500px;
+    height: 500px;
+    background: black;
     margin: auto;
     position: relative;
 }
 
 .slide {
-    width: 110%;
+    width: 100%;
     height: 100%;
-    
-    
+    position: absolute;
     top: 0;
 }
 
 .slide-image {
     height: 100%;
-    border: 3px;
-    border: 5px solid black;
 }
 
 .slide-text {
@@ -1278,23 +1273,18 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
 }
 
 .icon {
-    width: 50px;
+    width: 60px;
     position: absolute;
     top: 40%;
-    height: 6%;
-    border: none;
-    margin-right: 3px;
 }
 
 #next-icon {
-    right: -18%;
+    right: -80px;
 }
 
 .icon2 {
-    width: 50px;
+    width: 60px;
     top: 40%;
-    height: 6%;
-
 }
 
 #previous-icon {
