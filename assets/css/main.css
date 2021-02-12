@@ -15,6 +15,19 @@ img {
     width: 100%;
 }
 
+hr{
+    width:100%;
+
+
+}
+
+#mapeimg{
+    visibility: hidden;
+    display:none;
+
+
+}
+
 .socialicon {
     height: 4%;
     width: 4%;
@@ -1231,6 +1244,26 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         display: none;
         visibility: hidden;
     }
+    .slideshow {
+        width: 1200px;
+        height: 800px;
+        margin: auto;
+        position: relative;
+        border: 3px black;
+        display: none;
+        visibility: hidden;
+      
+    }
+    #mapeimg{
+        visibility: visible;
+        display:block;
+
+        height: 100%;
+        width: 100%
+    
+    
+    }
+    
 }
 
 @media only screen and (min-width: 999px) {
@@ -1251,11 +1284,12 @@ img{
 }
 
 .slideshow {
-    width: 1200px;
-    height: 800px;
+    width: 75em;
+    height: 50em;
     margin: auto;
     position: relative;
     border: 3px black;
+
 }
 
 .slide {
