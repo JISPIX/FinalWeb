@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -33,38 +34,7 @@
 <script>
 
 
-	var slides = $('.slide');
-	var currentSlide = 1;
-	function changeSlide() {
-		$('.slide').css('opacity', '0');
-		$('#slide' + currentSlide).animate({
-			'opacity': '1'
-		}, 500);
-	}
-	changeSlide();
-
-
-
-	function next() {
-		if (currentSlide < slides.length) {
-			currentSlide = currentSlide + 1;
-		} else {
-			currentSlide = 1;
-		}
-		changeSlide();
-	}
-	$('#next-icon').click(next);
-
-	function previous() {
-		if (currentSlide > 1) {
-			currentSlide = currentSlide - 1;
-		} else {
-			currentSlide = slides.length;
-		}
-		changeSlide();
-	}
-	$('#previous-icon').click(previous);
-
+	
 </script>
 
 
@@ -309,26 +279,38 @@
 
 			</article>
 
+
+
 			<div class="slideshow">
 
-				<img src="images/arrow.png" class="icon2" id="previous-icon">
+				<img class = "slide" id="imgterpe" alt="img" src="images/IMG-0184.JPG" />
+				<script type="text/javascript">
+					$(function () {
+						//prepare Your data array with img urls
+						var dataArray = new Array();
+						dataArray[0] = "images/unnamed.jpg";
+						dataArray[1] = "images/IMG-8689.jpg";
+						dataArray[2] = "images/IMG-8682.jpg";
+						dataArray[3] = "images/img0.png";
 
-				<div class="slide" id="slide1">
-					<span class="slide-text">1. Lady Ada</span>
-					<img src="images/IMG-8690.jpg" class="slide-image">
-				</div>
+						//start with id=0 after 5 seconds
+						var thisId = 0;
 
-				<div class="slide" id="slide2">
-					<span class="slide-text">2. Isaac Newton</span>
-					<img src="images/IMG-0183.JPG" class="slide-image">
-				</div>
+						window.setInterval(function () {
+							$('#imgterpe').attr('src', dataArray[thisId]);
+							thisId++; //increment data array id
+							if (thisId == 3) thisId = 0; //repeat from start
+						}, 4000);
+					});
+				</script>
 
 				
 
 
 
-			
-				<img src="images/arrow.png" class="icon" id="next-icon">
+
+
+
 
 
 			</div>

@@ -1244,12 +1244,18 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     visibility: visible;
 }
 
+img{
+    border: 3px black;
+
+
+}
+
 .slideshow {
-    width: 500px;
-    height: 500px;
-    background: black;
+    width: 1200px;
+    height: 800px;
     margin: auto;
     position: relative;
+    border: 3px black;
 }
 
 .slide {
@@ -1257,34 +1263,30 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     height: 100%;
     position: absolute;
     top: 0;
+    border: 3px black;
 }
 
 .slide-image {
     height: 100%;
-}
-
-.slide-text {
-    font-size: 32px;
-    color: white;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: black;
+    border: 3px black;
 }
 
 .icon {
     width: 60px;
     position: absolute;
     top: 40%;
+    height: 100%;
 }
 
 #next-icon {
     right: -80px;
+    height: 70px;
 }
 
 .icon2 {
     width: 60px;
     top: 40%;
+    height: 100px;
 }
 
 #previous-icon {
@@ -1292,4 +1294,63 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     left: -75px;
     position: absolute;
     top: 40%;
+    height: 70px;
+}
+
+#slide img {
+    position: absolute;
+}
+
+.slide-img {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.show {
+    opacity: 1;
+}
+
+#imgterpe{
+    border: 3px black;
+
+
+}
+
+
+#infotwo{
+    z-index: 0;
+        position: absolute;
+        width: 5.5em;
+        overflow: hidden;
+        background-color: #fff;
+        background-image: url("images/bg02.png");
+        left: -10.5em;
+        top: 0;
+        padding: 1.5em 1em 1.5em 1em;
+        margin-top: 25em;
+       
+        border-top-left-radius: 0.4em;
+        border-bottom-left-radius: 0.4em;
+        box-shadow: 0.25em 0 0 0 #fbfbfb, 0 0 0.25em 0em rgba(0, 0, 0, 0.25);
+
+
+}
+
+#infothree{
+    z-index: 0;
+        position: absolute;
+        width: 5.5em;
+        overflow: hidden;
+        background-color: #fff;
+        background-image: url("images/bg02.png");
+        left: -10.5em;
+        top: 0;
+        padding: 1.5em 1em 1.5em 1em;
+        margin-top: 40em;
+       
+        border-top-left-radius: 0.4em;
+        border-bottom-left-radius: 0.4em;
+        box-shadow: 0.25em 0 0 0 #fbfbfb, 0 0 0.25em 0em rgba(0, 0, 0, 0.25);
+
+
 }
