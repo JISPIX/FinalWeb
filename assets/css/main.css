@@ -16,7 +16,7 @@ img {
 }
 
 hr{
-    width:100%;
+    width:130%;
 
 
 }
@@ -1251,8 +1251,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         margin: auto;
         position: relative;
         border: 3px black;
-        display: none;
-        visibility: hidden;
+       
       
     }
     #mapeimg{
@@ -1285,7 +1284,7 @@ img{
 }
 
 .slideshow {
-    width: 100%;
+    width: 115%;
     height: 40.500em;
     margin: auto;
     position: absolute;
