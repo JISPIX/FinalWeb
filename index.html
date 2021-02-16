@@ -276,47 +276,50 @@
 					Hello. Welcome to My website! Hope you enjoy! This website is made with HTML5,CSS, and JavaScript.
 					Source code will be on my Github Soon!
 				</p>
+				<div class="slideshow">
+
+					<img class = "slide" id="imgterpe" alt="img" src="images/IMG-0184.JPG" />
+					<script type="text/javascript">
+						$(function () {
+							
+							var dataArray = new Array();
+							dataArray[0] = "images/unnamed.jpg";
+							dataArray[1] = "images/IMG-8689.jpg";
+							dataArray[2] = "images/IMG-8682.jpg";
+							dataArray[3] = "images/img0.png";
+	
+							
+							var thisId = 0;
+	
+							window.setInterval(function () {
+								$('#imgterpe').attr('src', dataArray[thisId]);
+								thisId++;
+								if (thisId == 3) thisId = 0; 
+							}, 3000);
+						});
+					</script>
+					
+					
+	
+	
+	
+	
+	
+	
+	
+	
+				</div>
+	
+	
 
 			</article>
-			<img class = "mapeimg" id="imgterpe" alt="img" src="images/IMG-0184.JPG" />
+
+			
+			<img class = "mapeimg" alt="img" src="images/IMG-0184.JPG" />
 
 
 
-			<div class="slideshow">
-
-				<img class = "slide" id="imgterpe" alt="img" src="images/IMG-0184.JPG" />
-				<script type="text/javascript">
-					$(function () {
-						
-						var dataArray = new Array();
-						dataArray[0] = "images/unnamed.jpg";
-						dataArray[1] = "images/IMG-8689.jpg";
-						dataArray[2] = "images/IMG-8682.jpg";
-						dataArray[3] = "images/img0.png";
-
-						
-						var thisId = 0;
-
-						window.setInterval(function () {
-							$('#imgterpe').attr('src', dataArray[thisId]);
-							thisId++;
-							if (thisId == 3) thisId = 0; 
-						}, 3000);
-					});
-				</script>
-
-				
-
-
-
-
-
-
-
-
-			</div>
-
-
+			
 
 
 

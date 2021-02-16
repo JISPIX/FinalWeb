@@ -21,7 +21,7 @@ hr{
 
 }
 
-#mapeimg{
+.mapeimg{
     visibility: hidden;
     display:none;
 
@@ -315,6 +315,7 @@ p {
     -webkit-flex-shrink: 1;
     -ms-flex-shrink: 1;
     flex-shrink: 1;
+    height: 63em;
 }
 
 #contentcontact {
@@ -1284,10 +1285,11 @@ img{
 }
 
 .slideshow {
-    width: 75em;
-    height: 50em;
+    width: 100%;
+    height: 40.500em;
     margin: auto;
-    position: relative;
+    position: absolute;
+    
     border: 3px black;
 
 }
@@ -1300,10 +1302,14 @@ img{
     border: 3px black;
 }
 
-.slide-image {
+img{
+    width: 100%;
     height: 100%;
-    border: 3px black;
+
+
 }
+
+
 
 .icon {
     width: 60px;
@@ -1331,20 +1337,15 @@ img{
     height: 70px;
 }
 
-#slide img {
-    position: absolute;
-}
 
-.slide-img {
-    opacity: 0;
-    transition: opacity 2s;
-}
 
 .show {
     opacity: 1;
 }
 
 #imgterpe{
+    width: 100%;
+    height: 100%;
     border: 3px black;
 
 
