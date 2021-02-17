@@ -1254,15 +1254,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
        
       
     }
-    #mapeimg{
-        visibility: visible;
-        display:block;
-
-        height: 100%;
-        width: 100%
-    
-    
-    }
+   
     
 }
 
@@ -1284,9 +1276,10 @@ img{
 }
 
 .slideshow {
-    width: 115%;
+    width: 100%;
+   
     height: 40.500em;
-    margin: auto;
+    
     position: absolute;
     
     border: 3px black;
@@ -1294,8 +1287,8 @@ img{
 }
 
 .slide {
-    width: 100%;
-    height: 100%;
+    
+    height: 40.500em;
     position: absolute;
     top: 0;
     border: 3px black;
@@ -1343,10 +1336,7 @@ img{
 }
 
 #imgterpe{
-    width: 100%;
-    height: 100%;
-    border: 3px black;
-
+   
 
 }
 
