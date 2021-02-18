@@ -46,7 +46,7 @@ hr{
 }
 
 #content{
-    height: 2000px;
+    height: 1200px;
 
 
 }
@@ -1237,7 +1237,7 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         padding-top: 40px;
     }
     #content {
-        height: 1000px;
+        height: 1500px;
     }
     #openbtntop {
         display: none;
