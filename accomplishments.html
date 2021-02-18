@@ -8,13 +8,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
 
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src = "articles.js"></script>
 
 
 
@@ -32,10 +34,26 @@
 </style>
 
 <script>
+	for (var post of yato) {
+        var postHtml = `<div class="posttwo">
+                        <img src="${post.image}">
+                          <h3>${post.title}</h3>
+                          <p>${post.description}</p>
+                          <a href="${post.link}">Read More</a>
+      </div>`
 
+        $('.container').append(postHtml);
+      }
 
-	
+      function listView(){
+        $('.container').addClass('list-view');
+      }
+      function gridView(){
+        $('.container').removeClass('list-view');
+    }
 </script>
+
+
 
 
 <body class="is-preload">
@@ -218,6 +236,11 @@
 
 		<div class="inner">
 
+			<div class = "container">
+      
+			</div>
+		   
+
 
 
 
@@ -244,19 +267,28 @@
 
 
 					<h2 class="home"><a>ACCOMPLISHMENTS</a></h2>
-					<p>Welcome to my Website!</p>
+					<p>Achievments!!</p>
 				</header>
 				
 
 
 
-				<p>
-
-
-
-
-					WOP
-				</p>
+				<div class="list">
+      
+					<div class = "card Avengers">            
+					  <p>Arduino Car | Summer 2017</p>
+					  <img class = "imgterpetwo" src="images/ARDUINO.PNG">
+					  <p> Driving Sensor Car using Arduino UNO. (unfinished) </p>
+					</div>
+					
+					  <div class = "card Avengers">            
+					  <p>Website | 2020</p>
+					  <img src="images/web.PNG">
+					  <p> First Working Website using HTML/CSS/Javascript</p>
+					</div>
+					
+					
+				  </div>
 				
 	
 	
