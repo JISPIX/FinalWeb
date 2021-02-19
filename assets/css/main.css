@@ -22,6 +22,11 @@ hr{
 
 
 }
+.list{
+    width:90%;
+
+
+}
 
 .mapeimg{
     visibility: hidden;
@@ -389,10 +394,7 @@ button {
     padding-left: 10px;
 }
 
-.list {
-    width: 1250px;
-    margin-right: 100px;
-}
+
 
 .listfamily {
     width: 1250px;
@@ -431,13 +433,15 @@ button {
 
 .card {
     display: inline-block;
+    margin-right: 10px;
     
     padding: 10px;
     background-color: #f0eff5;
     border-radius: 10px;
     width:20%;
     vertical-align: text-top;
-    position: relative;
+    font-size: 90%;
+    
     
     margin-top: 0px;
   
@@ -1192,6 +1196,9 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
     .openbtn:hover {
         background-color: #444;
     }
+    .openbtnclose:hover {
+        background-color: #444;
+    }
     #main {
         transition: margin-left .5s;
         padding: 16px;
@@ -1298,6 +1305,22 @@ section> :last-child, section>.inner> :last-child, section:last-child, article> 
         position: relative;
         border: 3px black;
        
+      
+    }
+    .card {
+        display: inline-block;
+        margin-right: 10px;
+        
+        padding: 10px;
+        background-color: #f0eff5;
+        border-radius: 10px;
+        width:30%;
+        vertical-align: text-top;
+        font-size: 75%;
+        
+        
+        
+        margin-top: 0px;
       
     }
    
