@@ -1422,7 +1422,7 @@ img{
         left: -10.5em;
         top: 0;
         padding: 1.5em 1em 1.5em 1em;
-        margin-top: 23em;
+        margin-top: 43em;
        
         border-top-left-radius: 0.4em;
         border-bottom-left-radius: 0.4em;
@@ -1441,7 +1441,26 @@ img{
         left: -10.5em;
         top: 0;
         padding: 1.5em 1em 1.5em 1em;
-        margin-top: 80em;
+        margin-top: 88em;
+       
+        border-top-left-radius: 0.4em;
+        border-bottom-left-radius: 0.4em;
+        box-shadow: 0.25em 0 0 0 #fbfbfb, 0 0 0.25em 0em rgba(0, 0, 0, 0.25);
+
+
+}
+
+#infofour{
+    z-index: 0;
+        position: absolute;
+        width: 5.5em;
+        overflow: hidden;
+        background-color: #fff;
+        background-image: url("images/bg02.png");
+        left: -10.5em;
+        top: 0;
+        padding: 1.5em 1em 1.5em 1em;
+        margin-top: 23em;
        
         border-top-left-radius: 0.4em;
         border-bottom-left-radius: 0.4em;
