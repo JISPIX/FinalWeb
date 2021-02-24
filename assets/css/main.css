@@ -29,6 +29,23 @@ hr{
 
 }
 
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination {
+    display: inline-block;
+  }
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
 .mapeimg{
     visibility: hidden;
     display:none;
@@ -1424,7 +1441,7 @@ img{
         left: -10.5em;
         top: 0;
         padding: 1.5em 1em 1.5em 1em;
-        margin-top: 43em;
+        margin-top: 86em;
        
         border-top-left-radius: 0.4em;
         border-bottom-left-radius: 0.4em;
@@ -1443,7 +1460,7 @@ img{
         left: -10.5em;
         top: 0;
         padding: 1.5em 1em 1.5em 1em;
-        margin-top: 88em;
+        margin-top: 133em;
        
         border-top-left-radius: 0.4em;
         border-bottom-left-radius: 0.4em;
@@ -1462,7 +1479,26 @@ img{
         left: -10.5em;
         top: 0;
         padding: 1.5em 1em 1.5em 1em;
-        margin-top: 23em;
+        margin-top: 67em;
+       
+        border-top-left-radius: 0.4em;
+        border-bottom-left-radius: 0.4em;
+        box-shadow: 0.25em 0 0 0 #fbfbfb, 0 0 0.25em 0em rgba(0, 0, 0, 0.25);
+
+
+}
+
+#infofive{
+    z-index: 0;
+        position: absolute;
+        width: 5.5em;
+        overflow: hidden;
+        background-color: #fff;
+        background-image: url("images/bg02.png");
+        left: -10.5em;
+        top: 0;
+        padding: 1.5em 1em 1.5em 1em;
+        margin-top: 24em;
        
         border-top-left-radius: 0.4em;
         border-bottom-left-radius: 0.4em;
