@@ -1460,7 +1460,7 @@ img{
         left: -10.5em;
         top: 0;
         padding: 1.5em 1em 1.5em 1em;
-        margin-top: 132em;
+        margin-top: 140em;
        
         border-top-left-radius: 0.4em;
         border-bottom-left-radius: 0.4em;
@@ -1533,4 +1533,3 @@ img{
 .posttwo:hover{
     background-color:#dff9fb;
 }
-
